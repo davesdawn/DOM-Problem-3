@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-  <center>
-  <form >
+  <body>
+  <form name = "formid">
     <label for="teams">Choose a favorite Premier League  team:</label>
-    <select name="teams" id="teams">
+    <select name="teams" id="teams" onchange="getLists()">
       <option value="arsenal">Arsenal</option>
       <option value="chelsea">Chelsea</option>
-      <option value=">manchester united">Manchester United</option>
+      <option value="manchester united">Manchester United</option>
       <option value="liverpool">Liverpool</option>
       <option value="spurs">Spurs</option>
       <option value="manchester city">Manchester City</option>
@@ -25,10 +24,12 @@
     <input type="submit" value="Submit">
     
   </form>
-</center>
+
     
-
-
-    <script src="style.js"></script>
+    <p id="info">
+       
+    </p>
+</body>
+    <script src="app.js"></script>
 </body>
 </html>
